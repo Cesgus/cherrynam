@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Proyecto</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color:rgba(143, 201, 37, 0.603);
+        color: #fff;
+        padding: 10px;
+    }
+    nav ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav li {
+        display: inline; /* Hace que los items del menú estén en una linea*/
+        margin-right:20px; /*Espacioentrelos items delmenú*/
+    }
+    nav a {
+        text-decoration: none;
+        color: #509e10;
+        font-size: 16px;
+    }
+        nav a:hover {
+        text-decoration: underline;
+        -color: rgb(219, 219, 176);
+    }
+    </style>
+</head>
+<body>
+  <header>
+        <nav>
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="SERVICIOS.html">Servicios</a></li>
+                <li><a href="PORTAFOLIO.html">Portafolio</a></li>
+                <li><a href="CONTACTO.html">Contacto</a></li>
+            </ol>
+        </nav>
+    </header>
+    <h1>Contacta con nosotros</h1>
+   <form action="#" method="POST">
+        <fieldset>
+            <legend>Informacion del Estudiante<br>que accederá | a clases</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+            <legend>Grado de Enseñanza: </legend><br>
+            <label for="Grado">Seleccione su Grado</label>
+            <select id="Grado" name="Grado"><br>
+                <option value="1ro de secundaria">1ro de secundaria</option>
+                <option value="2do de secundaria">2do de secundaria</option>
+                <option value="3ro de secundaria">3ro de secundaria</option>
+                <option value="4to de secundaria">4to de secundaria</option>
+                <option value="5to de secundaria">5to de secundaria     </option>
+            </select><br><br>
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+            <legend>Colegio de donde proviene:  </legend><br>
+            <label for="Colegiodondeproviene">Indique su colegio a continuacion</label> 
+            <input type="text" id="Colegiodondeproviene" name="Colegiodondeproviene" required><br><br>
+            <legend>Genero<br></legend>
+            <input type="radio" id="masculino" name="genero" value="Masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="Femenino" required>
+            <label for="femenino">Femenino</label><br><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
